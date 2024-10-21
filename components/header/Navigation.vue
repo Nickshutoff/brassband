@@ -1,11 +1,9 @@
 <template>
-  <nav>
-    <ul class="nav">
+    <ul class="navigation-links">
       <li v-for="(link, index) in navigationLinks" :key="index">
         <a :href="`${link.href}`">{{ link.label }}</a>
       </li>
     </ul>
-  </nav>
 </template>
 
 <script>
@@ -34,21 +32,13 @@ export default {
       ]
     };
   },
-
-  mounted() {
-    
-  },
-
-  methods: {
-    
-  },
-};
+}
 </script>
 
 <style lang="scss" scoped>
-  .nav {
+  .navigation-links {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 56px;
   }
 </style>

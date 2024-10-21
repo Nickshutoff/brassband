@@ -1,11 +1,11 @@
 <template>
   <div class="header-container">
     <MegapolisLogo />
-    <div class="header-content">
+    <nav class="header-navigation">
       <Navigation />
       <MakeCall phoneNumber="+79370923080">+7 937 092-30-80</MakeCall>
       <SocialNets />
-    </div>
+    </nav>
   </div>
 </template>
 
@@ -31,15 +31,19 @@ export default {
 <style lang="scss" scoped>
   .header-container {
     display: flex;
+    flex: 1;
     justify-content: center;
     margin: 51px 70px;
     gap: 20px;
     font-family: $font-primary;
   }
 
-  .header-content {
+  .header-navigation {
     display: flex;
     flex-direction: row;
     gap: 105px;
+    ::v-deep * {
+      color: var(--c-600);
+    }
   }
 </style>

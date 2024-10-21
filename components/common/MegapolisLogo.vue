@@ -1,5 +1,5 @@
 <template>
-  <img :src='logo.src' :alt='logo.alt'>
+  <img :src="logo.src" :alt="logo.alt" />
 </template>
 
 <script>
@@ -10,9 +10,15 @@ export default {
     return {
       logo: {
         src: require('~/assets/img/icons/logo.svg'),
-        alt: 'Megapolis Brass-Band'
-      }
-    };
+        alt: 'Megapolis Brass-Band',
+      },
+    }
   },
-};
+}
 </script>
+
+<style lang="scss" scoped>
+img {
+  mix-blend-mode: difference;
+}
+</style>

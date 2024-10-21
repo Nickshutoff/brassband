@@ -1,9 +1,6 @@
-@import 'helpers/reset'; //https://www.boag.online/notepad/post/css-reset
-@import 'helpers/variables';
-
 :root {
   --bg-color: #EAEAEA;
-
+  --transparent:  rgba(0, 0, 0, 0);
   //Colors
   --c-100: #EAEAEA; // Цвет кнопки Play на видео
   --c-200: #E5E5E5;
@@ -15,7 +12,7 @@
 
 .dark {
   --bg-color: #000;
-
+  --transparent:  rgba(0, 0, 0, 0);
   //Colors
   --c-200: #000;
   --c-300: #B5B5B5;

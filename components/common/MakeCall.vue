@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       phoneIcon: {
-        src: require('~/assets/img/icons/phone.svg'),
+        src: require('~/assets/img/icons/phone2.svg'),
         alt: 'Позвоните нам'
       }
     };
@@ -28,3 +28,13 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.make-call {
+  display: flex;
+  align-items: center;
+  
+  img {
+    width: 24px;
+  }
+}
+</style>

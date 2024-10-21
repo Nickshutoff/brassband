@@ -1,22 +1,25 @@
 <template>
-  <div class="container">
-    <HeaderContainer />
+  <div>
+    <HeaderSection />
+    <WelcomeSection />
+    <AboutSection />
   </div>
 </template>
 
 <script>
-import HeaderContainer from '~/components/header/HeaderContainer.vue'
+import HeaderSection from '~/components/header/HeaderSection.vue'
+import WelcomeSection from '~/components/welcome/WelcomeSection.vue';
+import AboutSection from '~/components/about/AboutSection.vue';
 
 export default {
   name: 'IndexPage',
   components: {
-    HeaderContainer,
+    HeaderSection,
+    WelcomeSection,
+    AboutSection,
   }
 }
 </script>
 
 <style lang="scss">
-.container {
-  max-width: 1440px;
-}
 </style>

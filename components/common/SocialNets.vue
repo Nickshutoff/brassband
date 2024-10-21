@@ -38,13 +38,12 @@ export default {
       ]
     };
   },
-
-  mounted() {
-    
-  },
-
-  methods: {
-    
-  },
-};
+}
 </script>
+<style lang="scss" scoped>
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+</style>
